@@ -93,7 +93,7 @@ public class LoginCommand implements CommandExecutor {
                     sender.getServer().getScheduler().cancelTask(limbo.getTimeoutTaskId());
                     LimboCache.getInstance().deleteLimboPlayer(name);
                 }
-                player.sendMessage(m._("login"));
+                player.sendMessage(m._("masuk"));
                 ConsoleLogger.info(player.getDisplayName() + " logged in!");
             } else {
                 ConsoleLogger.info(player.getDisplayName() + " used the wrong password");
